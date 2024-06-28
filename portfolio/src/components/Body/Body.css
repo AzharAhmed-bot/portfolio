@@ -1,0 +1,99 @@
+/* Body.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #767676, #99f2c8);
+    color: white;
+}
+
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 20px;
+    background: linear-gradient(135deg, #171717, #c0c2c1);
+}
+
+.text-content {
+    flex: 1;
+    text-align: start;
+    padding: 20px;
+    max-width: 50%;
+}
+
+.image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.description {
+    font-size: 1.5rem;
+    color: #f0f0f0;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icon {
+    color: #f0f0f0;
+    transition: color 0.3s;
+}
+
+.icon:hover {
+    color: #0073b1; /* LinkedIn blue color */
+}
+
+.icon:nth-child(1):hover {
+    color: #333; /* GitHub black color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .body {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .text-content, .image-content {
+        max-width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .description {
+        font-size: 1.2rem;
+    }
+
+    .profile-image {
+        max-width: 300px;
+    }
+}

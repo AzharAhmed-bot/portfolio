@@ -1,0 +1,57 @@
+/* AboutMe.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #9e9e9e, #99f2c8);
+    color: white;
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: linear-gradient(135deg, #939393, #1d1d1d);
+}
+
+.about-content {
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.about-description {
+    font-size: 1.5rem;
+    color: #f0f0f0;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        padding: 20px;
+    }
+
+    .about-title {
+        font-size: 2.5rem;
+    }
+
+    .about-description {
+        font-size: 1.2rem;
+    }
+}
